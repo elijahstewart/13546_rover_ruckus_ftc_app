@@ -2,12 +2,10 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.hardware.DcMotorController;
 import com.qualcomm.robotcore.hardware.Servo;
-import com.qualcomm.robotcore.hardware.Servo;
-/**
+/*
  * Created by noahbrick48 on 10/17/2018.
- */
+  */
 
 public class hardwaremap2 {
 
@@ -18,6 +16,10 @@ public class hardwaremap2 {
     public DcMotor leftwheel = null;
     public DcMotor ballarm = null;
     public Servo ballholder = null;
+
+    public final static double negativeone = 0;
+    public final static double center = 0.5;
+    public final static double one = 1;
 
     HardwareMap hwMap2 = null;
 
@@ -33,8 +35,8 @@ public class hardwaremap2 {
 
         lifter = hwMap2.get(DcMotor.class, "lifter");
 
-        //ballarm = hwMap2.get(DcMotor.class, "ball arm");
-        //ballholder= hwMap2.get(Servo.class, "ballholder");
+        ballarm = hwMap2.get(DcMotor.class, "ball arm");
+        ballholder = hwMap2.get(Servo.class, "servoball");
 
 
 
@@ -44,6 +46,7 @@ public class hardwaremap2 {
                 }
 
     }
+
 
 
 

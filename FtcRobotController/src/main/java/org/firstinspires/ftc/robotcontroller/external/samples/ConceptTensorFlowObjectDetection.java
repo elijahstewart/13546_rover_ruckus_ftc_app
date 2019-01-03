@@ -29,6 +29,7 @@
 
 package org.firstinspires.ftc.robotcontroller.external.samples;
 
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -49,8 +50,8 @@ import org.firstinspires.ftc.robotcore.external.tfod.Recognition;
  * IMPORTANT: In order to use this OpMode, you need to obtain your own Vuforia license key as
  * is explained below.
  */
-@TeleOp(name = "Concept: TensorFlow Object Detection", group = "Concept")
-@Disabled
+@Autonomous(name = "not stolen", group = "Concept")
+
 public class ConceptTensorFlowObjectDetection extends LinearOpMode {
     private static final String TFOD_MODEL_ASSET = "RoverRuckus.tflite";
     private static final String LABEL_GOLD_MINERAL = "Gold Mineral";
@@ -68,7 +69,7 @@ public class ConceptTensorFlowObjectDetection extends LinearOpMode {
      * Once you've obtained a license key, copy the string from the Vuforia web site
      * and paste it in to your code on the next line, between the double quotes.
      */
-    private static final String VUFORIA_KEY = " -- YOUR NEW VUFORIA KEY GOES HERE  --- ";
+    private static final String VUFORIA_KEY = "AWNAQgT/////AAABmSMNfKDWF0pLv2PkipZvR4dPWsDUT8WR2YAFCYBySvmRmhibtH70RHSc6vXDqQomKWVjmjH1hz+ieUy94WrFKvjKUrRogBxZu5650ND4E7LYq03gnBStL2BHhY00zhQZOB9U2qeNnh9+V+IUhf1zQvQXVsR4mxaP9sEOD1Z/RofV/ikuJlq7rsNU0UkifGQ8P2y/H7p3gqYv0r3P2yAtImYX5ea4HBPdaqHmmVzG4X96GGMILsrH//+F+ja3qCfAuK1+ETE7QZyqc9V8i6OTp+GuYCwOeIFg6fmQZKZWVr76LUKoQTg3ZHbTJsXQcIEjhZn9LdiTtvnLZSKoMM6l6KUbyZG6xF/1Owl29EP7DJk7";
 
     /**
      * {@link #vuforia} is the variable we will use to store our instance of the Vuforia
